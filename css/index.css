@@ -608,16 +608,16 @@ body {
     background: linear-gradient(90deg, #ff5313 50%, #e0e0e0 50%);
 }
 .contact .box .contxt {
-    position: absolute; top: 32%; left: 50%;
+    position: absolute; top: 40%; left: 50%;
     transform: translateX(-50%); 
     background: url(../img/comment_대지\ 1.png) no-repeat center; 
     background-size: cover;
     padding: 20px 30px; width: 500px; height: 211px;
-    opacity: 1;
-    transition: all 1s;
+    opacity: 0;
+    transition: all 1s 0.8s;
 }
-.contact .box .contxt.on {
-    top: 40%; opacity: 0;
+.contact .box.on .contxt {
+    top: 32%; opacity: 1;
 }
 .contact .box .contxt > div {float: left;}
 .contact .box .contxt > div:nth-child(1) {
@@ -640,7 +640,7 @@ body {
 .contact .box > div:nth-child(2) > img{ 
     position: absolute; top:0%; left: 0%;
 }
-.contact .box div img:nth-child(2) { animation: mobile both 1s infinite; }
+.contact .box.on div img:nth-child(2) { animation: mobile both 1s; }
 @keyframes mobile {
     from,
     11.1%,
@@ -676,3 +676,10 @@ body {
       transform: skewX(-0.1deg) skewY(-0.1deg);
     }
   }
+
+
+#footer {
+    background: #161616; color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
