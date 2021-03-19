@@ -173,9 +173,11 @@ $(window).on('scroll',function(){
     } else if ( sct >= projectN && sct < contactN ) {
         $('#sidenav a > span').eq(1).addClass('on').siblings().removeClass('on')
         $('#nav > ul > li').eq(1).addClass('on').siblings().removeClass('on')
+        $('.contact .box').removeClass('on')
     } else if ( sct >= contactN ) {
         $('#sidenav a > span').eq(0).addClass('on').siblings().removeClass('on')
         $('#nav > ul > li').eq(0).addClass('on').siblings().removeClass('on')
+        $('.contact .box').addClass('on')
     }
 })
 
@@ -199,3 +201,19 @@ $('#nav li').on('click', function(e){
     navN()
 })
 
+
+$('.section').on('mousewheel',function(e, delta){
+    // 0보다 크면 위로, 0보다 작으면 아래로
+    if (delta>0) {
+        var prev = $(this).prev().offset().top
+        $('html').stop().animate({
+            scrollTop:prev
+        }, 500, 'linear')
+    } else if (delta<0) {
+        var next = $(this).next().offset().top
+        $('html').stop().animate({
+            scrollTop:next
+        }, 500, 'linear')
+    }
+    console.log(delta)
+})
