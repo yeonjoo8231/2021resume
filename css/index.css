@@ -52,7 +52,7 @@ body {
 }
 #header #nav {
     position: fixed; z-index: 999; width: calc(100% - 50px);
-    margin-left: 50px;
+    margin-left: 50px; padding: 0 10px;
 }
 #header #nav ul { overflow: hidden; margin: 0 auto;}
 #header #nav ul li {
@@ -487,15 +487,16 @@ body {
     position: relative;
     height: 100vh; background: #e0e0e0;
 }
-.projects .proout {margin: auto; width: 1000px;}
+/* .projects .proout {margin: auto; width: 950px;} */
 .projects .slide_group2 { 
     width: 1450px;  height: 600px; overflow: hidden;
     position: absolute;
     top: 50%; transform: translateY(-50%);
+    right: 0;
     /* border: 1px solid seagreen; */
 }
 .projects .slide_group2 .slide { 
-    width: 100px;  height: 600px;
+    width: 100px;  height: 600px; overflow: hidden;
     border: 1px solid #161616;
     border-right: transparent;
     float: left; 
