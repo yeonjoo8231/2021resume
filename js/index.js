@@ -77,10 +77,10 @@ $('.aboutme .folder').on('click',function(){
                     $('.aboutme .browbox > div').eq(3).animate({
                         opacity:1
                     },300,function(){
-                        draw (70, '.html')
-                        draw (50, '.css')
-                        draw (70, '.javascript')
-                        draw (50, '.jquery')
+                        draw (85, '.html')
+                        draw (80, '.css')
+                        draw (65, '.javascript')
+                        draw (70, '.jquery')
                         draw (50, '.react')
                     })
                 })
