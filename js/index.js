@@ -142,7 +142,7 @@ $('.exper .ed2 >p').on('click',function(){
 // }
 
 
-var deviceSize = 1300;   
+var deviceSize = 1400;   
 var ww;
 function init(){
     ww = $(window).width()
