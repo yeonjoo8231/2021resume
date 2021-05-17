@@ -1,515 +1,244 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeonjoo's RESUME</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet" href="css/linea_icon.css">
+    <title>김연주의 포트폴리오</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="css/linea_icon.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/rowindex.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
 </head>
-<!-- https://www.w3schools.com/cssref/css3_pr_flex-direction.asp 참고 -->
 <body>
-    <div class="wrap">
-        <div class="skip"><a href="#section">본문 바로가기</a></div>
-        <header id="header">
-            <div id="sidenav">
-                <a href="#none"><span>CONTACT</span><span>PROJECTS</span><span>ABOUT ME</span><span class="on">INTRO</span></a>
+    <div id="wrap">
+        <div id="nav">
+            <ul>
+                <li class="on">About me</li>
+                <li>Skills</li>
+                <li>Projects</li>
+            </ul>
+        </div>
+        <div class="introBG"></div>
+        <div id="intro">
+            <div class="contentBG">
+                <img src="./images/content_bg.jpg" alt="">
+                <img src="./images/content_bg01.jpg" alt="">
+                <div class="curtain"></div>
+                <div class="curtainL"></div>
+                <div class="curtainR"></div>
+                <div class="light">
+                    <div class="lightBG"></div>
+                    <div class="lightTXT">
+                        <p>안녕하세요.</p>
+                        <p><span>'김연주'</span>입니다.</p>
+                    </div>
+                </div>
+                <p>click!<span class="lnr lnr-pointer-up"></span></p>
+                <p>click! again<span class="lnr lnr-pointer-up"></span></p>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li class="on"><a href="#intro">INTRO</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="section">
-            <article class="section intro">
-                <div class="slide_group">
-                    <div class="slide slide1">
-                        <div class="bg">
-                            <div class="contents">
-                                <p>SUGGESTED!</p>
-                                <h1>
-                                    <a href="#none">
-                                        <img class="img1" src="./img/imoji03_180px.png" alt="">
-                                    </a>
-                                </h1>
-                                <div class="txt">
-                                    <h2>YEONJOO_KIM</h2>
-                                    <p>Front-End Developer</p>
-                                    <p>김연주</p>
-                                    <button>+ HIRE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slide2">
-                        <div class="bg">
-                            <div class="contents">
-                                <ul class="program">
-                                    <li><i class="fab fa-html5"></i><span>HTML</span></li>
-                                    <li><i class="fab fa-css3-alt"></i><span>CSS</span></li>
-                                    <li><img src="img/jquery.png" alt=""><span>JQUERY</span></li>
-                                    <li><i class="fab fa-js-square"></i><span>JS</span></li>
-                                    <li><i class="fab fa-react"></i><span>React</span></li>
-                                </ul>
-                                <div class="ask">
-                                    <h2>무엇이든 물어보세요!</h2>
-                                    <p>어떤 프로그램 사용하시나요?</p>
-                                </div>
-                                <div class="design">
-                                    <p><span>Ps</span><span>Ai</span><span>3d max</span><span>Auto CAD</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slide3">
-                        <div class="bg">
-                            <div class="contents cf">
-                                <p class="p1"><i class="fas fa-chevron-left"></i>오픈채팅방<i class="fas fa-bars"></i></p>
-                                <p class="date"></p>
-                                <p class="p2"><span>게스트님</span>이 입장하셨습니다.</p>
-                                <div class="outer outer1 cf">
-                                    <div class="h2"><i class="fas fa-user-circle"></i></div>
-                                    <div class="question">
-                                        <p>'김연주'의 tmi는?</p>
-                                    </div>
-                                </div>
-                                <div class="outer outer2 cf">
-                                    <div class="answer">
-                                        <p>mbti는 'ENTJ' 입니다.</p>
-                                        <p>뉴질랜드 워킹홀리데이 1년 경험</p>
-                                        <p>태국 교환학생 약 1년 경험 </p>
-                                        <p>다양한 자격증 보유 중 입니다 :)</p>
-                                    </div>
-                                </div>
-                                <img src="./img/imoji02.png" alt="">
-                                <div class="bbox"><i class="far fa-plus-square"></i><div></div></div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div id="content">
+            <div id="article1" class="article">
+                <div class="imgbox1">
+                    <img src="./images/intro_img1.png" alt="">
                 </div>
-            </article>
-            <article class="section aboutme">
-                <div class="outer">
-                    <button class="folder"><i class="fas fa-folder"></i><span>CLICK!</spa></button>
-                    <div class="browbox">
-                        <div class="info">
-                            <div class="text">
-                                <h2><i class="fas fa-search"></i>안녕하세요. <span>김연주</span>입니다.</h2>
-                                <div class="txtdown">
-                                    <p><i class="fas fa-search"></i>Front-End Developer</p>
-                                    <p><i class="fas fa-search"></i>서울시 은평구</p>
-                                    <p><i class="fas fa-search"></i>yeonjoo8231@naver.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="topdot">
-                                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
-                            </div>
-                            <div class="dpskill">
-                                <div class="design cf">
-                                    <h2><i class="icon-arrows_down"></i><span>디자인</span> 프로그램 스킬(4)<p class="line"></p></h2>
-                                    <div class="ps">
-                                        <div class="dlogo">Ps</div>
-                                        <div>
-                                            <span>Photoshop</span>
-                                            <p>90%</p>
-                                        </div>
-                                    </div>
-                                    <div class="ai">
-                                        <div class="dlogo">Ai</div>
-                                        <div>
-                                            <span>Illustrator</span>
-                                            <p>80%</p>
-                                        </div>
-                                    </div>
-                                    <div class="max">
-                                        <div class="dlogo">3</div>
-                                        <div>
-                                            <span>3ds max</span>
-                                            <p>90%</p>
-                                        </div>
-                                    </div>
-                                    <div class="cad">
-                                        <div class="dlogo">A</div>
-                                        <div>
-                                            <span>Auto cad</span>
-                                            <p>70%</p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="proskill ">
-                                    <h2><i class="icon-arrows_down"></i><span>코딩</span> 프로그램 스킬(5)<p class="line"></p></h2>
-                                    <div class="html cf">
-                                        <p>HTML</p>
-                                        <div class="score">
-                                            <div class="myscore"></div>
-                                        </div>
-                                    </div>
-                                    <div class="css cf">
-                                        <p>CSS</p>
-                                        <div class="score">
-                                            <div class="myscore"></div>
-                                        </div>
-                                    </div>
-                                    <div class="javascript cf">
-                                        <p>Java Script</p>
-                                        <div class="score">
-                                            <div class="myscore"></div>
-                                        </div>
-                                    </div>
-                                    <div class="jquery cf">
-                                        <p>JQUERY</p>
-                                        <div class="score">
-                                            <div class="myscore"></div>
-                                        </div>
-                                    </div>
-                                    <div class="react cf">
-                                        <p>React</p>
-                                        <div class="score">
-                                            <div class="myscore"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="edu">
-                            <div class="topdot">
-                                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
-                            </div>
-                            <div class="excontent cf">
-                                <div class="exicons">
-                                    <i class="fas fa-mouse-pointer"></i>
-                                    <i class="fas fa-pen-nib"></i>
-                                    <i class="fas fa-text-height"></i>
-                                    <i class="fas fa-eraser"></i>
-                                </div>
-                                <div class="exlayer">
-                                    <h2>EXPERIENCE</h2>
-                                    <ul class="exlist">
-                                        <li><i class="far fa-eye"></i>2019.APR-19.OCT | 프리랜서디자이너</li>
-                                        <li><i class="far fa-eye"></i>2017.MAY-19.APR | 전시디자인회사</li>
-                                        <li><i class="far fa-eye"></i>2016.JAN-17.APR | 전시디자인회사</li>
-                                        <li><i class="far fa-eye"></i>2011.MAR-15.DEC | 사진관</li>
-                                        <li><i class="far fa-eye"></i> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="exper">
-                            <div class="topdot">
-                                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
-                            </div>
-                            <div class="edcont">
-                                <div class="ed1">
-                                    <p><i class="fas fa-desktop ileft"></i>Desktop<i class="fas fa-caret-right iright"></i></p>
-                                    <p><i class="far fa-file ileft"></i>Document<i class="fas fa-caret-right iright"></i></p>
-                                    <p><i class="fas fa-arrow-circle-down ileft"></i>Downloads<i class="fas fa-caret-right iright"></i></p>
-                                </div>
-                                <div class="ed2">
-                                    <p class="on"><i class="fas fa-folder ileft"></i>License<i class="fas fa-caret-right iright"></i></p>
-                                    <p><i class="fas fa-folder ileft"></i>Education<i class="fas fa-caret-right iright"></i></p>
-                                </div>
-                                <div class="ed">
-                                    <div class="active">
-                                        <i class="fas fa-folder"></i>
-                                        <h2>자격증</h2>
-                                        <div class="edtxt">
-                                            <p>2021-04-30<span>웹디자인기능사</span></p>
-                                            <p>2015-12-18<span>실내건축기사</span></p>
-                                            <p>2014-12-26<span>전산응용건축제도기능사</span></p>
-                                            <p>2011-08-26<span>GTQ포토샵 1급</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <i class="fas fa-folder"></i>
-                                        <h2>교육과정</h2>
-                                        <div class="edtxt">
-                                            <p>2021-05-26<span>UI/UX디자인 웹퍼블리셔&프론트엔트 개발자 양성과정</span></p>
-                                            <!-- <p>2020-03-02<span>NZLC</span></p> -->
-                                            <p>2016-02-14<span>환경디자인학 학사</span></p>
-                                            <!-- <p>2014-06-14<span>태국</span></p> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="section projects">
-                <div class="proout">
-                    <div class="slide_group2">
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>01</h2>
-                                <p class="rocation">BISTRO</p>
-                                <div class="proimg cf">
-                                    <a href="https://yeonjoo8231.github.io/bistro/." target="_blank"><img src="./img/project1.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>BISTRO</span>
-                                                <h3>반응형홈페이지</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.JAN - 2021.FEB</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">WEB:D 사이트 디자인을 참고하여 메인 및 서브페이지로 구성하고 반응형으로 제작하였습니다.</p>
-                                            </div>
-                                            <a href="https://yeonjoo8231.github.io/bistro/." target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>02</h2>
-                                <p class="rocation">JINAIR</p>
-                                <div class="proimg">
-                                    <a href="https://yeonjoo8231.github.io/jinair/" target="_blank"><img src="./img/project2.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>JINAIR</span>
-                                                <h3>홈페이지 리뉴얼</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.MAR</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
-                                            </div>
-                                            <a href="https://yeonjoo8231.github.io/jinair/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>03</h2>
-                                <p class="rocation">TAEGEUKDANG</p>
-                                <div class="proimg">
-                                    <a href="https://yeonjoo8231.github.io/taegeuk/" target="_blank"><img src="./img/project3.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>TAEGEUKDANG</span>
-                                                <h3>홈페이지 리뉴얼</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.APR</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
-                                            </div>
-                                            <a href="https://yeonjoo8231.github.io/taegeuk/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>   
-                        </div>
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>04</h2>
-                                <p class="rocation">TODAY,ZERO</p>
-                                <div class="proimg">
-                                    <a href="http://yeonjoo2161.dothome.co.kr" target="_blank"><img src="./img/project4.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>TODAY,ZERO</span>
-                                                <h3>모바일앱 구현</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.MAR - 2021.APR</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">모바일사이즈로 PHP문법을 사용하여 메인 및 서브페이지로 구성하고 JSON파일을 이용하여 제작하였습니다.</p>
-                                            </div>
-                                            <a href="http://yeonjoo2161.dothome.co.kr" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>05</h2>
-                                <p class="rocation">IKEA</p>
-                                <div class="proimg">
-                                    <a href="https://yeonjoo8231.github.io/react-ikea/" target="_blank"><img src="./img/project5.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>IKEA</span>
-                                                <h3>리액트 구현</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.MAY</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">PC사이즈로 페이지를 리액트로 제작하였습니다.</p>
-                                            </div>
-                                            <a href="https://yeonjoo8231.github.io/react-ikea/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="imgbox cf">
-                                <h2>06</h2>
-                                <p class="rocation">PORTFOLIO</p>
-                                <div class="proimg">
-                                    <a href="https://yeonjoo8231.github.io/2021resume/" target="_blank"><img src="./img/project6.jpg" alt=""></a>
-                                    <div class="protxt">
-                                        <div class="protop">
-                                            <i class="icon-arrows_plus"></i>
-                                            <i class="icon-arrows_remove"></i>
-                                        </div>
-                                        <div class="procont">
-                                            <div>
-                                                <span>PORTFOLIO</span>
-                                                <h3>포트폴리오 페이지</h3>
-                                            </div>
-                                            <div>
-                                                <span>구축기간</span>
-                                                <p>2021.JAN - 2021.FEB</p>
-                                            </div>
-                                            <div>
-                                                <span>참여도</span>
-                                                <p>100%</p>
-                                            </div>
-                                            <div>
-                                                <span>설명</span>
-                                                <p class="proex">포트폴리오 사이트로 원페이지로 구성하여 제작하였습니다.</p>
-                                            </div>
-                                            <a href="https://yeonjoo8231.github.io/2021resume/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
-                                        </div>
-                                        <div class="probtm">
-                                            <i class="fas fa-bold"></i><i class="fas fa-italic"></i><i class="fas fa-underline"></i><i class="fas fa-align-justify"></i><i class="far fa-image"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </article>
-            <article class="section contact">
-                <div class="row">
-                    <div class="box">
-                        <div class="contxt">
-                            <div><img src="img/imoji01.png" alt=""></div>
-                            <div>
-                                <h2>CONTACT</h2>
-                                <span>EMAIL</span>
-                                <P>yeonjoo8231@naver.com</P>
-                                <span>MOBILE</span>
-                                <P>010-9487-1128</P>
-                            </div>
+                <div class="imgbox2">
+                    <img src="./images/intro_img2.png" alt="">
+                    <div class="txt1">
+                        <span></span>
+                        <h1><span>ABOUT ME</span></h1>
+                        <div>
+                            <h2>대한민국</h2>
+                            <p>- 서울 은평구 거주</p>
+                            <p>- 실내디자인학과 졸업</p>
+                            <p>- 전시디자인회사 경력 약3년</p>
                         </div>
                         <div>
-                            <img src="img/mobile1-01.png" alt="">
-                            <img src="img/mobile-01.png" alt="">
+                            <h2>태국</h2>
+                            <p>- 교환학생</p>
+                        </div>
+                        <div>
+                            <h2>뉴질랜드</h2>
+                            <p>- 워킹홀리데이</p>
+                        </div>
+                    </div>
+                    <img src="./images/intro_img3.png" alt="">
+                    <img src="./images/intro_img3.png" alt="">
+                    <img src="./images/intro_img3.png" alt="">
+                </div>
+            </div>
+            <div id="article2" class="article">
+                <div class="imgbox3">
+                    <img src="./images/article_img1.png" alt="">
+                </div>
+                <div class="imgbox4">
+                    <img src="./images/article_img2.png" alt="">
+                    <div class="skill ">
+                        <h1><span>프로그램 스킬</span></h1>
+                        <div class="html cf">
+                            <h2>HTML</h2>
+                            <div class="score">
+                                <div class="myscore"></div>
+                            </div>
+                        </div>
+                        <div class="css cf">
+                            <h2>CSS</h2>
+                            <div class="score">
+                                <div class="myscore"></div>
+                            </div>
+                        </div>
+                        <div class="javascript cf">
+                            <h2>JavaScript</h2>
+                            <div class="score">
+                                <div class="myscore"></div>
+                            </div>
+                        </div>
+                        <div class="jquery cf">
+                            <h2>JQUERY</h2>
+                            <div class="score">
+                                <div class="myscore"></div>
+                            </div>
+                        </div>
+                        <div class="react cf">
+                            <h2>React</h2>
+                            <div class="score">
+                                <div class="myscore"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="license">
+                        <h1><span>자격증</span></h1>
+                        <p>웹디자인기능사<span>2020.04.30</span></p>
+                        <p>실내건축기사<span>2015.12.18</span></p>
+                        <p>전산응용건축제도기능사<span>2014.12.26</span></p>
+                        <p>GTQ포토샵1급<span>2011.08.26</span></p>
+                    </div>
+                    <div class="design">
+                        <p>Ps</p>
+                        <p>Ai</p>
+                        <p>3ds max</p>
+                        <p>Auto CAD</p>
+                    </div>
+                </div>
+            </div>
+            <div id="article3" class="article">
+                <div class="imgbox5">
+                    <img src="./images/article_img3.png" alt="">
+                </div>
+                <div class="imgbox6">
+                    <img src="./images/article_img4.png" alt="">
+                    <div class="slide-group">
+                        <div class="slide">
+                            <h1><span>반응형홈페이지</span></h1>
+                            <a class="img2" href="https://yeonjoo8231.github.io/bistro/." target="_blank"><img src="./images/article_img5.png" alt="반응형"></a>
+                            <div class="txt2">
+                                <h2><span>반응형 홈페이지 구현</span><a href="https://yeonjoo8231.github.io/bistro/." target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p>2021.JAN - 2021.FEB</p>
+                                <p>WEB:D 사이트 디자인을 참고하여 메인 및 서브페이지로 구성하고 반응형으로 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <h1><span>진에어홈페이지 리뉴얼</span></h1>
+                            <a class="img2" href="https://yeonjoo8231.github.io/jinair/" target="_blank"><img src="./images/article_img6.png" alt="리뉴얼"></a>
+                            <div class="txt2">
+                                <h2><span>진에어홈페이지 리뉴얼</span><a href="https://yeonjoo8231.github.io/jinair/" target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p><span>2021.MAR</span><span><a href="https://www.jinair.com/booking/index" target="_blank">리뉴얼전<span class="lnr lnr-arrow-right-circle"></span></a></span></p>
+                                <p>PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP / ILLUSTRATOR</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <h1><span>태극당홈페이지 리뉴얼</span></h1>
+                            <a class="img2" href="https://yeonjoo8231.github.io/taegeuk/" target="_blank"><img src="./images/article_img7.png" alt="리뉴얼"></a>
+                            <div class="txt2">
+                                <h2><span>태극당홈페이지 리뉴얼</span><a href="https://yeonjoo8231.github.io/taegeuk/" target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p><span>2021.APR</span><span><a href="http://www.taegeukdang.com/" target="_blank">리뉴얼전<span class="lnr lnr-arrow-right-circle"></span></a></span></p>
+                                <p>PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP / ILLUSTRATOR</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <h1><span>모바일앱 구현</span></h1>
+                            <a class="img2" href="http://yeonjoo2161.dothome.co.kr" target="_blank"><img src="./images/article_img8.png" alt="모바일"></a>
+                            <div class="txt2">
+                                <h2><span>모바일앱 구현</span><a href="http://yeonjoo2161.dothome.co.kr" target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p>2021.MAR - 2021.APR</p>
+                                <p>모바일사이즈로 PHP문법을 사용하여 메인 및 서브페이지로 구성하고 JSON파일을 이용하여 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP / ILLUSTRATOR</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <h1><span>이케아 리액트 구현</span></h1>
+                            <a class="img2" href="https://yeonjoo8231.github.io/react-ikea/" target="_blank"><img src="./images/article_img9.png" alt="리액트"></a>
+                            <div class="txt2">
+                                <h2><span>이케아 리액트 구현</span><a href="https://yeonjoo8231.github.io/react-ikea/" target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p>2021.MAY</p>
+                                <p>PC사이즈로 페이지를 리액트로 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP / ILLUSTRATOR</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <h1><span>포트폴리오 페이지</spa></h1>
+                            <a class="img2" href="https://yeonjoo8231.github.io/2021resume/." target="_blank"><img src="./images/article_img10.png" alt="포폴"></a>
+                            <div class="txt2">
+                                <h2><span>포트폴리오 페이지 VER 2.0</span><a href="https://yeonjoo8231.github.io/2021resume/." target="_blank">자세히보기<span class="lnr lnr-arrow-right-circle"></span></a></h2>
+                                <p>2021.JAN - 2021.FEB</p>
+                                <p>포트폴리오 사이트로 원페이지로 구성하여 제작하였습니다.</p>
+                                <p>VSC / PHOTOSHOP / ILLUSTRATOR</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </article>
-        </section>
-        <footer id="footer">
-            <div class="copy">
-                copyright © 2021 YEONJOO KIM all rights reserved. <br>
-                AAAAAAA@gmail.com
+                <div class="clickbus">
+                    <p>click!</p>
+                </div>
+                <div class="bus">
+                    <div class="busbox">
+                        <img src="./images/bus.png" alt="">
+                        <p class="clickagain">* 버스를 클릭하면 후진합니다 *</p>
+                        <div class="bustext">
+                            <div>
+                                <p class="result1"></p>
+                                <p class="result2"><span>1</span></p>
+                            </div>
+                            <div class="contact">
+                                <div>
+                                    <span class="lnr lnr-phone-handset"></span>
+                                    <span class="emph ph">010-9487-1128</span>
+                                    
+                                </div>
+                                <div>
+                                    <span class="lnr lnr-envelope"></span>
+                                    <span class="emph em">yeonjoo8231@naver.com</span>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+
+                    
+                </div>
             </div>
-        </footer>
+            <div class="sprite">
+                <div class="simgbox">
+                    <img src="./images/sprite.png" alt="">
+                </div>
+            </div>
+            <div class="scrollevt">
+                <img src="./images/mousewheel.png" alt="">
+                <p>SCROLL<span>DOWN</span   ></p>
+            </div>
+            
+            
+        </div>
     </div>
     <script src="./js/index.js"></script>
 </body>
-
 </html>
