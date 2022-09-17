@@ -236,5 +236,4 @@ $('.section').on('mousewheel',function(e, delta){
             scrollTop:next
         }, 500, 'linear')
     }
-    console.log(delta)
 })
