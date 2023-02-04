@@ -17,6 +17,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6, strong, th {
     font-weight:normal; /* bold */
@@ -93,13 +94,6 @@ input, select {
 }
 img { vertical-align:middle; max-width:100% }
 * { margin:0; padding:0; box-sizing:border-box; }
-.cf::after { content:''; display:block; clear:both }
-.blind {
-    position:absolute; width:0px; height:0px;
-    overflow:hidden; font-size:0px;
-    text-indent:-9999px;
-    line-height:0px;
-}
 
 /* 본문바로가기 스타일 */
 .skip a { display:block;
