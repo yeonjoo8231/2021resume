@@ -8,17 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="css/linea_icon.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
-    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <link rel="stylesheet" href="./css/common.css">
-    <!-- <link rel="stylesheet" href="./css/rowindex.css"> -->
-    <!-- <script src="./js/jquery-1.12.4.min.js"></script> -->
-    <!-- <script src="./js/slick.min.js"></script> -->
-    <!-- <script src="js/jquery.mousewheel.min.js"></script> -->
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap pc">
         <div class="skip"><a href="#section">본문 바로가기</a></div>
         <header id="header">
             <div id="sideNav" class="nav">
@@ -64,12 +57,12 @@
                         </div>
                         <div class="slide">
                             <ul class="program">
-                                <li><i class="fab fa-html5"></i><span>HTML</span></li>
-                                <li><i class="fab fa-css3-alt"></i><span>CSS</span></li>
-                                <li><i class="fab fa-js-square"></i><span>JS</span></li>
-                                <li><i class="fab fa-vuejs"></i><span>Vuejs</span></li>
-                                <li><i class="fab fa-react"></i><span>React</span></li>
-                                <li><img src="img/jquery.png" alt="JQUERY"><span>JQUERY</span></li>
+                                <li><p><i class="fab fa-html5"></i></p><span>HTML</span></li>
+                                <li><p><i class="fab fa-css3-alt"></i></p><span>CSS</span></li>
+                                <li><p><i class="fab fa-js-square"></i></p><span>JS</span></li>
+                                <li><p><i class="fab fa-vuejs"></i></p><span>Vuejs</span></li>
+                                <li><p><i class="fab fa-react"></i></p><span>React</span></li>
+                                <li><p><img src="img/jquery.png" alt="JQUERY"></p><span>JQUERY</span></li>
                             </ul>
                             <ul class="ask">
                                 <li>무엇이든 물어보세요!</li>
@@ -91,16 +84,16 @@
                                 </li>
                                 <li class="date"></li>
                                 <li><span>게스트님</span>이 입장하셨습니다.</li>
-                                <li>
+                                <li class="flex">
                                     <i class="fas fa-user-circle"></i>
                                     <p>'김연주'의 TMI는?</p>
                                 </li>
                                 <li>
                                     <ul>
-                                        <li>MBTI는 'ENTJ' 입니다.</li>
-                                        <li>뉴질랜드 워킹홀리데이 1년</li>
-                                        <li>태국 교환학생 약 1년 </li>
-                                        <li>다양한 자격증 보유 중 입니다 :)</li>
+                                        <li><span>MBTI는 'ENTJ' 입니다.</span></li>
+                                        <li><span>뉴질랜드 워킹홀리데이 1년</span></li>
+                                        <li><span>태국 교환학생 약 1년 </span></li>
+                                        <li><span>다양한 자격증 보유 중 입니다 :)</span></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -241,7 +234,7 @@
                                     <ul>
                                         <li>
                                             <i class="far fa-eye"></i>
-                                            <span>2021.JUN - NOW | 홈퍼니싱 브랜드 회사</span>
+                                            <span>2021.JUN - NOW | 홈퍼니싱 브랜드</span>
                                         </li>
                                         <li>
                                             <i class="far fa-eye"></i>
@@ -300,8 +293,10 @@
                             </ul>
                             <ul class="small_category">
                                 <li class="samll_list active">
-                                    <i class="fas fa-folder"></i>
-                                    <h2>자격증</h2>
+                                    <p>
+                                        <i class="fas fa-folder"></i>
+                                        <h2>자격증</h2>
+                                    </p>
                                     <ul class="text">
                                         <li>2021-04-30<span>웹디자인기능사</span></li>
                                         <li>2015-12-18<span>실내건축기사</span></li>
@@ -310,10 +305,12 @@
                                     </ul>
                                 </li>
                                 <li class="samll_list">
-                                    <i class="fas fa-folder"></i>
-                                    <h2>교육과정</h2>
+                                    <p>
+                                        <i class="fas fa-folder"></i>
+                                        <h2>교육과정</h2>
+                                    </p>
                                     <ul class="text">
-                                        <li>2021-05-26<span>UI/UX디자인 웹퍼블리셔&프론트엔트 개발자 양성과정</span></li>
+                                        <li>2021-05-26<span>UI/UX디자인 웹퍼블리셔<br>&프론트엔트 개발자 양성과정</span></li>
                                         <li>2016-02-14<span>환경디자인학 학사</span></li>
                                     </ul>
                                 </li>
@@ -338,22 +335,24 @@
                                         <i class="icon-arrows_remove"></i>
                                     </div>
                                     <div class="procont">
-                                        <div>
-                                            <span>BISTRO</span>
-                                            <h3>반응형홈페이지</h3>
-                                        </div>
-                                        <div>
-                                            <span>구축기간</span>
-                                            <p>2021.JAN - 2021.FEB</p>
-                                        </div>
-                                        <div>
-                                            <span>참여도</span>
-                                            <p>100%</p>
-                                        </div>
-                                        <div>
-                                            <span>설명</span>
-                                            <p class="proex">WEB:D 사이트 디자인을 참고하여 메인 및 서브페이지로 구성하고 반응형으로 제작하였습니다.</p>
-                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>BISTRO</span>
+                                                <h3>반응형홈페이지</h3>
+                                            </li>
+                                            <li>
+                                                <span>구축기간</span>
+                                                <p>2021.JAN - 2021.FEB</p>
+                                            </li>
+                                            <li>
+                                                <span>참여도</span>
+                                                <p>100%</p>
+                                            </li>
+                                            <li>
+                                                <span>설명</span>
+                                                <p class="proex">WEB:D 사이트 디자인을 참고하여 메인 및 서브페이지로 구성하고 반응형으로 제작하였습니다.</p>
+                                            </li>
+                                        </ul>
                                         <a href="https://yeonjoo8231.github.io/bistro/." target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
                                     </div>
                                     <div class="probtm">
@@ -377,22 +376,24 @@
                                         <i class="icon-arrows_remove"></i>
                                     </div>
                                     <div class="procont">
-                                        <div>
-                                            <span>JINAIR</span>
-                                            <h3>홈페이지 리뉴얼</h3>
-                                        </div>
-                                        <div>
-                                            <span>구축기간</span>
-                                            <p>2021.MAR</p>
-                                        </div>
-                                        <div>
-                                            <span>참여도</span>
-                                            <p>100%</p>
-                                        </div>
-                                        <div>
-                                            <span>설명</span>
-                                            <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
-                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>JINAIR</span>
+                                                <h3>홈페이지 리뉴얼</h3>
+                                            </li>
+                                            <li>
+                                                <span>구축기간</span>
+                                                <p>2021.MAR</p>
+                                            </li>
+                                            <li>
+                                                <span>참여도</span>
+                                                <p>100%</p>
+                                            </li>
+                                            <li>
+                                                <span>설명</span>
+                                                <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
+                                            </li>
+                                        </ul>
                                         <a href="https://yeonjoo8231.github.io/jinair/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
                                     </div>
                                     <div class="probtm">
@@ -416,22 +417,24 @@
                                         <i class="icon-arrows_remove"></i>
                                     </div>
                                     <div class="procont">
-                                        <div>
-                                            <span>TAEGEUKDANG</span>
-                                            <h3>홈페이지 리뉴얼</h3>
-                                        </div>
-                                        <div>
-                                            <span>구축기간</span>
-                                            <p>2021.APR</p>
-                                        </div>
-                                        <div>
-                                            <span>참여도</span>
-                                            <p>100%</p>
-                                        </div>
-                                        <div>
-                                            <span>설명</span>
-                                            <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
-                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>TAEGEUKDANG</span>
+                                                <h3>홈페이지 리뉴얼</h3>
+                                            </li>
+                                            <li>
+                                                <span>구축기간</span>
+                                                <p>2021.APR</p>
+                                            </li>
+                                            <li>
+                                                <span>참여도</span>
+                                                <p>100%</p>
+                                            </li>
+                                            <li>
+                                                <span>설명</span>
+                                                <p class="proex">PC사이즈로 기존 진에어홈페이지보다 레이아웃을 정돈하여 리뉴얼하여 메인페이지를 제작하였습니다.</p>
+                                            </li>
+                                        </ul>
                                         <a href="https://yeonjoo8231.github.io/taegeuk/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
                                     </div>
                                     <div class="probtm">
@@ -492,22 +495,24 @@
                                         <i class="icon-arrows_remove"></i>
                                     </div>
                                     <div class="procont">
-                                        <div>
-                                            <span>IKEA</span>
-                                            <h3>리액트 구현</h3>
-                                        </div>
-                                        <div>
-                                            <span>구축기간</span>
-                                            <p>2021.MAY</p>
-                                        </div>
-                                        <div>
-                                            <span>참여도</span>
-                                            <p>100%</p>
-                                        </div>
-                                        <div>
-                                            <span>설명</span>
-                                            <p class="proex">PC사이즈로 페이지를 리액트로 제작하였습니다.</p>
-                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>IKEA</span>
+                                                <h3>리액트 구현</h3>
+                                            </li>
+                                            <li>
+                                                <span>구축기간</span>
+                                                <p>2021.MAY</p>
+                                            </li>
+                                            <li>
+                                                <span>참여도</span>
+                                                <p>100%</p>
+                                            </li>
+                                            <li>
+                                                <span>설명</span>
+                                                <p class="proex">PC사이즈로 페이지를 리액트로 제작하였습니다.</p>
+                                            </li>
+                                        </ul>
                                         <a href="https://yeonjoo8231.github.io/react-ikea/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
                                     </div>
                                     <div class="probtm">
@@ -531,22 +536,24 @@
                                         <i class="icon-arrows_remove"></i>
                                     </div>
                                     <div class="procont">
-                                        <div>
-                                            <span>PORTFOLIO</span>
-                                            <h3>포트폴리오 페이지</h3>
-                                        </div>
-                                        <div>
-                                            <span>구축기간</span>
-                                            <p>2021.JAN - 2021.FEB</p>
-                                        </div>
-                                        <div>
-                                            <span>참여도</span>
-                                            <p>100%</p>
-                                        </div>
-                                        <div>
-                                            <span>설명</span>
-                                            <p class="proex">포트폴리오 사이트로 원페이지로 구성하여 제작하였습니다.</p>
-                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>PORTFOLIO</span>
+                                                <h3>포트폴리오 페이지</h3>
+                                            </li>
+                                            <li>
+                                                <span>구축기간</span>
+                                                <p>2021.JAN - 2021.FEB</p>
+                                            </li>
+                                            <li>
+                                                <span>참여도</span>
+                                                <p>100%</p>
+                                            </li>
+                                            <li>
+                                                <span>설명</span>
+                                                <p class="proex">포트폴리오 사이트로 원페이지로 구성하여 제작하였습니다.</p>
+                                            </li>
+                                        </ul>
                                         <a href="https://yeonjoo8231.github.io/portfolio/" target="_blank">VIEW MORE <i class="icon-arrows_right_double-31"></i></a>
                                     </div>
                                     <div class="probtm">
@@ -585,6 +592,9 @@
                 yeonjoo921027@gmail.com
             </div>
         </footer>
+    </div>
+    <div class="mo">
+        <p><span>반응형</span>은 준비 중입니다 :-)</p>
     </div>
     <!-- <script src="./js/index.js"></script> -->
     <script src="./js/common.js"></script>
