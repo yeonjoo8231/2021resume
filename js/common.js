@@ -1,5 +1,6 @@
 const nav = document.querySelectorAll('.nav')
 const article = document.querySelectorAll('.article')
+const contact = document.querySelector('.contact')
 
 this.moveToAticle()
 window.addEventListener('scroll', () => { this.navAddOn() })
@@ -10,8 +11,10 @@ function navAddOn() {
             const next = j + 1
             const last = article.length - 1
             nav[i].children[j].classList.remove('on')
+            contact.classList.remove('on')
             if (scrollTop >= article[last].offsetTop) {
                 nav[i].children[last].classList.add('on')
+                contact.classList.add('on')
             } else if (scrollTop >= article[j].offsetTop && scrollTop < article[next].offsetTop) {
                 nav[i].children[j].classList.add('on')
             }
